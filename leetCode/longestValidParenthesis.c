@@ -78,5 +78,5 @@ void push(struct stack* s, unsigned short n){
 }
 
 void chuck(struct stack* s){
-    s->top = (s->top > 0) ? s->top - 1 : s->top;    /* Decrement top if it is greater than 0 */
+    s->top = (s->top > 0) ? s->top - 1 : s->top;    /* Decrement top if it is greater than zero */
 }
