@@ -20,7 +20,7 @@ int* findSubstring(char * s, char ** words, int wordsSize, int* returnSize){
     unsigned short pl = wordsSize * wl;                         /* Permutation length */
     if(pl > sl) return result;
     unsigned short ssl = sl - pl;                               /* Number of possible substrings */
-    unsigned short hl = wordsSize * 18;
+    unsigned short hl = wordsSize * 18;                         /* Size of hashmap can impact speed */
     
     struct node** table = calloc(hl, sizeof(struct node*));     /* Keep hashtable of words */
 
